@@ -1,0 +1,80 @@
+html {
+	height: 100%;
+}
+
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+#top {
+    position: absolute;
+}
+h1, p {
+    margin: 0;
+    padding: 0.3em 0;
+}
+#container {
+    min-height: 100%;
+    margin-bottom: -36px;
+}
+* html #container {
+    height: 100%;
+}
+#footer-spacer {
+    height: 36px;
+}
+#footer {
+  padding: 5px;
+  border-top: 1px solid #ffaf24;
+  background-color: AAAADE;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+	color: #334488;
+	font-size: 2em;
+	font: normal small-caps bold 3em Arial, sans-serif;
+}
+
+p.text input {
+	height: 40px;
+	width: 740px;
+	background-color: #AAAADE;
+	font-size: 1.5em;
+}
+
+p.btn input {
+	font-size: 2em;
+	position: relative;
+}
+
+#resultado {
+	font-size: 1em;
+	padding: 3px;
+	width: 300px;
+	float: left;
+	position: fixed;
+	margin-top: 75px;
+}
+
+#map_canvas {
+	float: right;
+	margin-right: 440px;
+	width: 520px; height: 400px;
+	position: relative;
+	margin-top: 75px;
+}
+
+label {
+	font: normal small-caps normal 1em Arial, sans-serif;
+}
+
+label b {
+	color: #A22;
+}
+

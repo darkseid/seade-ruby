@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript"
+src="http://api.maps.yahoo.com/ajaxymap?v=3.8&appid=YD-eQRpTl0_JX2E95l_xAFs5UwZUlNQhhn7lj1H"></script>
+<style type="text/css">
+#map{
+height: 75%;
+width: 100%;
+}
+</style>
+
+
+<script type="text/javascript">
+	// Create a Map that will be placed in the "map" div.
+	
+
+	function startMap(){
+		var map = new YMap(document.getElementById('map')); 
+	
+		var currentGeoPoint = new YGeoPoint(-23.561866,-46.691292);
+		map.addMarker(currentGeoPoint);	
+	
+		// Add the ability to change between Sat, Hybrid, and Regular Maps
+		map.addTypeControl(); 	
+		// Add the zoom control. Long specifies a Slider versus a "+" and "-" zoom control
+		map.addZoomLong();    		
+		// Add the Pan control to have North, South, East and West directional control
+		map.addPanControl();  
+		// Specifying the Map starting location and zoom level
+		map.drawZoomAndCenter("av. Brigadeiro Faria lima, 1384 - São Paulo", 1);
+		// Add an event to report to our Logger
+		//YEvent.Capture(map, EventsList.MouseClick, reportPosition);
+	}	
+</script>
+
+</head>
+<body onload="javascript:startMap();">
+<hr/>
+<div id="map"></div>
+<hr/>
+</body>
+</html>
+
