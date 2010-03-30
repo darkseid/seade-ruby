@@ -1,1 +1,16 @@
-Teste
+Para utilizar Ruby no Google App Engine:
+
+sudo gem install google-appengine
+
+Caso o seu gem esteja com a versão inferior a 1.3.5, faça:
+
+sudo gem update --system
+
+Para subir o server na máquina local:
+
+dev_appserver.rb --port=4567 .
+
+Para fazer deploy para o google-appengine:
+
+appcfg.rb update . (porém, precisa criar uma conta no appengine e configura-la no config.ru antes)
+
